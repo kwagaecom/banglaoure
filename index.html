@@ -3123,7 +3123,7 @@ body{
             </div>
              <div class="modal-body" style="background-image: url('https://plus.unsplash.com/premium_photo-1683288662019-c92caea8276d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YmFzaWMlMjB3ZWJzaXRlJTIwZGV2ZWxvcGVtZW50JTIwc2VydmljZXN8ZW58MHx8MHx8fDA%3D'); background-size: cover; background-position: center;">
                <p class="form-text">Fill out the form below to place an order for your basic website development project. Our team will contact you soon.</p>
-                   <form id="contactForm4">
+                   <form id="contactForm1">
           <div class="row">
           <!-- Project Title -->
            <div class="col">
@@ -3212,7 +3212,7 @@ body{
 </div>
 
   <script>
-    document.getElementById("contactForm4").addEventListener("submit", function(event) {
+    document.getElementById("contactForm1").addEventListener("submit", function(event) {
       event.preventDefault(); // Prevent the default form submission
 
       const formData = new FormData(event.target);
@@ -3548,100 +3548,109 @@ body{
   width: 48%; /* Each column will take up nearly half the container width */
 }
 </style>
- <section class="section3">
-  <div class="container"style="background-image: url('https://media.istockphoto.com/id/1338907882/photo/web-contact-us-icons-on-blue-background-contact-us-cutomer-support-concept-copy-space-website.webp?a=1&b=1&s=612x612&w=0&k=20&c=C3DupJppDEVsT_7acAruvuIA7tgHcMoSvUrSR-OswCk='); background-size: cover; background-position: center; position: relative;">
+  <!---<div class="container"style="background-image: url('https://media.istockphoto.com/id/1338907882/photo/web-contact-us-icons-on-blue-background-contact-us-cutomer-support-concept-copy-space-website.webp?a=1&b=1&s=612x612&w=0&k=20&c=C3DupJppDEVsT_7acAruvuIA7tgHcMoSvUrSR-OswCk='); background-size: cover; background-position: center; position: relative;">
     <div class="row">
       <div class="col-sm text-center">
         <h1 class="div-heading display-4">Contact Us</h1>
       </div>
     </div>
-<div class="bg-light p-4 rounded-3">
-    <div class="row">
-      <!-- Form Section -->
-      <form id="contactForm4">
-      <div class="col-lg-8 col-md-12 p-4 bg-white rounded-3">
-        <h1 class="h5 text-capitalize mb-4">What service do you need?</h1>
-        <div class="d-flex flex-wrap mb-3">
-          <label class="me-4">
-            <input type="checkbox" name="services" value="Web Development" /> Web Development
-          </label>
-          <label class="me-4">
-            <input type="checkbox" name="services" value="Web Design" /> Web Design
-          </label>
-          <label class="me-4">
-            <input type="checkbox" name="services" value="Logo Design" /> Logo Design
-          </label>
-          <label>
-            <input type="checkbox" name="services" value="Others" /> Others
-          </label>
+<div class="checkbox-container">
+    <div class="checkbox-column">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+          <form id="contactForm">
+            <div class="row">
+    
+        <div class="form-group">
+          <input type="text" class="form-control" name="Name" id="exampleInputName" 
+                 placeholder="Your Full Name..." aria-label="Full Name" autocomplete="name" required>
         </div>
+        
+        
+        <div class="form-group">
+          <input type="email" name="Email" class="form-control" id="exampleInputEmail1" 
+                 placeholder="Your Email Address..." aria-label="Email Address" autocomplete="email" required>
+        </div>
+          </div>
+       
+        <div class="form-group">
+          <label class="text-white">Please select a Web Service:</label><br>
+          <div class="form-check">
+            <input type="radio" class="form-check-input" name="WebService" id="basic" value="Basic" required>
+            <label for="basic" class="form-check-label text-white">Basic</label>
+          </div>
+          <div class="form-check">
+            <input type="radio" class="form-check-input" name="WebService" id="standard" value="Standard">
+            <label for="standard" class="form-check-label text-white">Standard</label>
+          </div>
+          <div class="form-check">
+            <input type="radio" class="form-check-input" name="WebService" id="premium" value="Premium">
+            <label for="premium" class="form-check-label text-white">Premium</label>
+          </div>
+        </div>
+        
+       
+        
 
-        <!-- User Info Section -->
-        <div class="row">
-          <div class="col-md-6 mb-3">
-            <input required placeholder="First Name" type="text" name="first_name" class="form-control" />
-          </div>
-          <div class="col-md-6 mb-3">
-            <input required placeholder="Last Name" type="text" name="last_name" class="form-control" />
-          </div>
-          <div class="col-md-6 mb-3">
-            <input required placeholder="E-mail" type="email" name="email" class="form-control" />
-          </div>
-          <div class="col-md-6 mb-3">
-            <input required placeholder="Phone" type="tel" name="phone" class="form-control" />
-          </div>
-          <div class="col-md-12 mb-3">
-            <textarea required name="message" placeholder="Write your message" class="form-control" rows="4"></textarea>
-          </div>
-          <div class="text-end">
-            <button type="submit" class="btn px-4 py-3 btn-outline-dark">Send Message</button>
-          </div>
-        </div>
+  <label class="text-white">Please select Additional Services:</label><br>
+  <div class="checkbox-container">
+    <div class="checkbox-column">
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" name="AdditionalService[]" id="seoOption" value="SEO">
+        <label for="seoOption" class="form-check-label text-white">SEO</label>
       </div>
-
-      <!-- Contact Info Section -->
-      <div class="col-lg-4 col-md-12 text-white aside px-4 py-5">
-        <h2>Contact Information</h2>
-        <p class="opacity-50">Fill out the form and we'll get back to you within 24 hours.</p>
-        <ul class="list-unstyled">
-          <li class="mb-3">
-            <ion-icon name="call" class="fs-4 me-2"></ion-icon>
-            +91 8797529661
-          </li>
-          <li>
-            <ion-icon name="mail" class="fs-4 me-2"></ion-icon>
-            service@kraftywebdesign.com
-          </li>
-        </ul>
-        <div class="text-center mt-4">
-          <a href="https://codepen.io/walidcherhane" target="_blank" class="fs-3 text-white">
-            <ion-icon name="logo-codepen"></ion-icon>
-          </a>
-        </div>
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" name="AdditionalService[]" id="digitalMarketingOption" value="Digital Marketing">
+        <label for="digitalMarketingOption" class="form-check-label text-white">Digital Marketing</label>
+      </div>
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" name="AdditionalService[]" id="youtubeVideoOption" value="YouTube Video">
+        <label for="youtubeVideoOption" class="form-check-label text-white">YouTube Video</label>
+      </div>
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" name="AdditionalService[]" id="emailMarketingOption" value="Email Marketing">
+        <label for="emailMarketingOption" class="form-check-label text-white">Email Marketing</label>
       </div>
     </div>
+    <div class="checkbox-column">
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" name="AdditionalService[]" id="WebsiteOptimizationOption" value="WebsiteOptimization">
+        <label for="WebsiteOptimizationOption" class="form-check-label text-white">Website Optimization</label>
+      </div>
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" name="AdditionalService[]" id="ContentMarketingOption" value="ContentMarketing">
+        <label for="ContentMarketingOption" class="form-check-label text-white">Content Marketing</label>
+      </div>
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" name="AdditionalService[]" id="AffiliateMarketingOption" value="AffiliateMarketing">
+        <label for="AffiliateMarketingOption" class="form-check-label text-white">Affiliate Marketing</label>
+      </div>
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" name="AdditionalService[]" id="InfluencerMarketingOption" value="Influencer Marketing">
+        <label for="InfluencerMarketingOption" class="form-check-label text-white">Influencer Marketing</label>
+      </div>
+      </div>
+      
+      
+    </div>
+        
+        
+        <div class="form-group">
+          <textarea class="form-control" name="Message" aria-label="Message" placeholder="Your Message..." required></textarea>
+        </div>
+        
+     
+        <div class="text-center">
+          <button type="submit" class="btn btn-warning btn-lg" aria-label="Submit Form">Submit</button>
+        </div>
+      </form>
+       </div>
+    </div>
+    </div>
   </div>
- <script>
-  document.getElementById("contactForm4").addEventListener("submit", function(event) {
-    event.preventDefault(); // Prevent default form submission
-
-    const formData = new FormData(event.target);
-    const email = 'kwagaecom@gmail.com'; // Recipient email
-    const subject = 'Contact Form Submission';
-
-    let message = "Form Submission Details:\n\n";
-    formData.forEach((value, key) => {
-      message += `${key}: ${value}\n`;
-    });
-
-    // Create a "mailto" link
-    const mailtoURL = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
-
-    // Open default email client
-    window.location.href = mailtoURL;
-  });
-</script>
-  </section>
+</div>-->
+ 
+ 
 
 <!--<div class="col-md-6">
   <span class="badge rounded-pill bg-success">Delhi Office Address</span><span class="badge rounded-pill bg-success">+91 8797529661
@@ -4488,7 +4497,7 @@ iframe.goog-te-menu-frame {
       }
     });
   </script>
- <a href="https://kraftywebdesign.com/" target="_blank">
+ <a href="https://webnextstudios.club/" target="_blank">
 <img src="https://hitwebcounter.com/counter/counter.php?page=18914618&style=0001&nbdigits=5&type=page&initCount=0" title="Counter Widget" Alt="Visit counter For Websites"   border="0" /></a>            
   <!-- JavaScript Libraries -->
   <script src="lib/jquery/jquery.min.js"></script>
