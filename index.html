@@ -78,7 +78,7 @@
   <link rel="stylesheet" href="css/colors/blue.css">
   <script>
   function searchKeyword() {
-  var keywords = ["Krafty Web Design", "SEO", "digital marketing srrvices","Krafty Web Design", "ecommerce service", "Krafty Web Design","Website development company near me ","custom web development services","professional website design servic", "affordable web development service", "best web development company near me", "ecommerce website development servic", "responsive web design services","Mobile-friendly website design","Website redesign services", "Custom CMS development", "WordPress website development", "Web design for startups", "website development for businesses","web development agency near me","web development solutions","web development and seo", "frontend web development services", "backend development services", "website maintenance services", "web hosting services near me","web design and development company","full stack web development", "website security services near me", "web portal development Services", "Enterprise web development Services", "B2B website development Services","Landing page design services","Website speed optimization Services near me","professional website design", "affordable web development", "best web development company", "ecommerce website development", "responsive web design services","mobile-friendly website design","website redesign services", "custom cms development", "wordPress website development", "web design for startups", "website development for businesses","web development agency","web development solutions","web development and seo services near me", "frontend web development services", "backend development services", "website maintenance services near me", "Web hosting services near me","Web design and development company near me"]; // Add more keywords
+  var keywords = ["web design services", "SEO", "digital marketing srrvices","Krafty Web Design", "ecommerce service", "responsive design service","Website development company near me ","custom web development services","professional website design servic", "affordable web development service", "best web development company near me", "ecommerce website development servic", "responsive web design services","Mobile-friendly website design","Website redesign services", "Custom CMS development", "WordPress website development", "Web design for startups", "website development for businesses","web development agency near me","web development solutions","web development and seo", "frontend web development services", "backend development services", "website maintenance services", "web hosting services near me","web design and development company","full stack web development", "website security services near me", "web portal development Services", "Enterprise web development Services", "B2B website development Services","Landing page design services","Website speed optimization Services near me","professional website design", "affordable web development", "best web development company", "ecommerce website development", "responsive web design services","mobile-friendly website design","website redesign services", "custom cms development", "wordPress website development", "web design for startups", "website development for businesses","web development agency","web development solutions","web development and seo services near me", "frontend web development services", "backend development services", "website maintenance services near me", "Web hosting services near me","Web design and development company near me"]; // Add more keywords
   for (var i = 0; i < keywords.length; i++) {
     var searchURL = 'https://www.google.com/search?q=' + encodeURIComponent(keywords[i] + " site:https://Krafty Web Design.club/");
     Logger.log(searchURL); // Outputs the search URL for each keyword
@@ -3548,6 +3548,7 @@ body{
   width: 48%; /* Each column will take up nearly half the container width */
 }
 </style>
+<form id="contactForm1">
 <div class="container">
   <div class="bg-light">
     <div class="row">
@@ -3633,31 +3634,19 @@ body{
               <span class="opacity-50 d-flex align-items-center me-3 fs-2">
                 <ion-icon name="call"></ion-icon>
               </span>
-              <span>+134 1234 1234</span>
+              <span>+91 8797529661</span>
             </li>
             <li class="d-flex align-items-center r mb-4">
               <span class="opacity-50 d-flex align-items-center me-3 fs-2">
                 <ion-icon name="mail"></ion-icon>
               </span>
-              <span>Help@contact.com</span>
+              <span>service@kraftywebdesign.com</span>
             </li>
-            <li class="d-flex justify-content-start align-items-center mb-4">
-              <span class="opacity-50 d-flex align-items-center me-3 fs-2">
-                <ion-icon name="pin"></ion-icon>
-              </span>
-              <span>52 Buddy Ln Conway, <br />
-                Arkansas(AR), 72032
-              </span>
-            </li>
+           
           </ul>
           <div class="text-muted text-center">
-            <code>
-              Inspiration from :
-              <a href="https://dribbble.com/shots/14126196-Contact-Form-01/attachments/5749555?mode=media">
-                Erşad Başbağ
-              </a></code>
-            <br />
-            <code>Created By : walid cherhane </code> <br />
+            
+             <br />
             <code><a class="fs-3" href="https://codepen.io/walidcherhane" target="_blank">
                 <ion-icon name="logo-codepen"></ion-icon>
               </a></code>
@@ -3667,6 +3656,31 @@ body{
     </div>
   </div>
 </div>
+ </form>
+ <script>
+    document.getElementById("contactForm1").addEventListener("submit", function(event) {
+      event.preventDefault(); // Prevent the default form submission
+
+      const formData = new FormData(event.target);
+      const email = 'kwagaecom@gmail.com'; // Your Gmail address
+      const subject = 'Contact Form Submission'; // Subject for the email
+
+      let message = "Form Submission Details:\n\n";
+
+      // Iterate over form data and append to message
+      for (const [key, value] of formData.entries()) {
+        message += `${key}: ${value}\n`;
+      }
+
+      // Create a "mailto" URL with the pre-filled email subject and body
+      const mailtoURL = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
+
+      // Open the default email client with the pre-filled email
+      window.location.href = mailtoURL;
+
+    
+    });
+  </script>
 <style>
 * {
   font-family: "Poppins", sans-serif;
@@ -3729,7 +3743,7 @@ ion-icon:not([name="logo-codepen"]) {
   padding: 1rem;
 }
 </style>
- 
+
 
 <!--<div class="col-md-6">
   <span class="badge rounded-pill bg-success">Delhi Office Address</span><span class="badge rounded-pill bg-success">+91 8797529661
@@ -4367,7 +4381,7 @@ iframe.goog-te-menu-frame {
   <div>
     <b><i class="fas fa-phone"></i></b> +91 8797529661
     <span style="margin-left: 20px;">
-      <b><i class="fas fa-envelope"></i></b> <a href="mailto:service@Krafty Web Design.club">service@Krafty Web Design.club</a>
+      <b><i class="fas fa-envelope"></i></b> <a href="mailto:service@kraftywebdesign.com">service@kraftywebdesign.com</a>
     </span>
   </div>
 </div>
